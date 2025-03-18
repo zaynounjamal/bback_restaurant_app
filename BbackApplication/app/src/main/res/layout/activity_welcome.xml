@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity">
+
+   <ImageView
+       android:contentDescription="@string/background"
+       android:foreground="@drawable/foreground_design"
+       android:id="@+id/imageView2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+       android:src="@drawable/bg2"
+       tools:layout_editor_absoluteX="60dp"
+       tools:layout_editor_absoluteY="0dp" />
+   <ImageView
+       android:background="@drawable/logo_bg"
+       android:id="@+id/logo"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@drawable/bback"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="140dp"
+       android:contentDescription="logo"/>
+
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/logo"
+       android:layout_marginTop="260dp"
+       android:fontFamily="@font/lobster"
+       android:gravity="center"
+       android:text="@string/restaurant_name"
+       android:textAlignment="center"
+       android:textColor="@color/white"
+       android:textSize="33sp"
+       app:layout_constraintEnd_toEndOf="@+id/imageView2"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/hello_text"
+       android:textAlignment="center"
+       android:textColor="#FBFBFB"
+       android:textSize="16sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       tools:layout_editor_absoluteX="0dp"
+       tools:layout_editor_absoluteY="385dp"
+       app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+   <Button
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="120dp"
+       android:gravity="center"
+       android:padding="14dp"
+       android:text="@string/register_text"
+       android:onClick="Register"
+       android:textStyle="bold"
+       android:textAllCaps="false"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintWidth_percent=".8"
+       android:background="@drawable/btn_bg_design"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="68dp"
+       android:text="@string/sign_in"
+       android:onClick="login"
+       android:textColor="@color/white"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textAlignment="center"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       android:background="@drawable/btn_bg_design"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

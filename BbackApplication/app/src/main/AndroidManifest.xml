@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bback"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bback"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BbackApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsAndConditionsSettingsActivity"
+            android:exported="false" /> <!-- Activities -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompletedOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDispatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendingItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnjoyRestaurantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerService"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadHomeItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailedDailyMealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BbackApplication.NoActionBar" /> <!-- Meta-data for preloaded fonts -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

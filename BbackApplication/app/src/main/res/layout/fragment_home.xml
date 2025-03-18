@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/mediumGray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/open_search_view_edit_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/search_bg"
+            android:closeIcon="@drawable/baseline_clear_24"
+            android:drawablePadding="9dp"
+            android:fontFamily="@font/amita"
+            android:iconifiedByDefault="false"
+            android:padding="10dp"
+            android:queryHint="@string/search_your_food"
+            android:searchHintIcon="@null"
+            android:searchIcon="@drawable/ic_baseline_search_24"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:theme="@style/SearchViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_bg"
+            android:contentDescription="@string/person_account"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintEnd_toStartOf="@id/notification_icon"
+            app:layout_constraintStart_toEndOf="@+id/open_search_view_edit_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:background="@drawable/search_bg"
+            android:contentDescription="@string/person_account"
+            android:padding="10dp"
+            android:src="@drawable/baseline_circle_notifications_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profile_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hello_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/amarante"
+            android:text="@string/hello_user"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/open_search_view_edit_text"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <TextView
+            android:id="@+id/what_do_you_want"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="@font/amita"
+            android:text="@string/what_do_you_want"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hello_user"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_hor_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/what_do_you_want" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_ver_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_hor_rec" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_add_24"
+            app:backgroundTint="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_ver_rec" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

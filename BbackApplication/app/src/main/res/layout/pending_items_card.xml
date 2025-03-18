@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="TODO"
+        android:id="@+id/pending_img"
+        android:background="@color/purple_500"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:id="@+id/pending_text"
+        android:textSize="24sp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@id/pending_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginStart="@dimen/_20dp"
+        android:fontFamily="@font/amarante"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_order_details"
+        android:textColor="@color/purple_500"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/pending_text"
+        app:layout_constraintStart_toEndOf="@id/pending_img"
+        android:layout_marginStart="@dimen/_20dp"
+        android:id="@+id/view_order_details"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_order"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintTop_toBottomOf="@id/view_order_details"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/accept_order"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reject_order"
+        app:layout_constraintTop_toBottomOf="@id/view_order_details"
+        app:layout_constraintStart_toEndOf="@id/accept_order"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginStart="@dimen/_20dp"
+        android:id="@+id/reject_order"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

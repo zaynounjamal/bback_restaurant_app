@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_location"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp" />
+
+    <!-- Dropdown for Location -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locationDropdownLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/locationDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jaipur"
+            android:padding="8dp"
+            android:drawableEnd="@drawable/arrow_down"
+            android:fontFamily="@font/amita" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/to_provide_you_with_the_best_dining_experience_we_need_your_permission_to_access_your_device_s_location_by_enabling_location_services_we_can_offer_personalized_restaurant_recommendations_accurate_delivery_estimates_and_ensure_a_seamless_food_delivery_experience"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintTop_toBottomOf="@id/locationDropdownLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Footer Text -->
+    <TextView
+        android:id="@+id/footerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/design_by_zaynoun"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

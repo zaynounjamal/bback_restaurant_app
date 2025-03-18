@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.BbackApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary and Accent Colors -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Text Appearance -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+
+        <!-- Button Style -->
+        <item name="buttonStyle">@style/ButtonStyleDark</item>
+
+        <!-- Switch Style -->
+        <item name="switchStyle">@style/SwitchStyleDark</item>
+
+        <!-- EditText Style -->
+        <item name="editTextStyle">@style/EditTextStyleDark</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Button Style for Dark Mode -->
+    <style name="ButtonStyleDark">
+        <item name="android:backgroundTint">@color/purple_700</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:radius">8dp</item> <!-- Rounded button -->
+    </style>
+
+    <!-- Switch Style for Dark Mode -->
+    <style name="SwitchStyleDark">
+        <item name="android:thumbTint">@color/purple_700</item>
+        <item name="android:trackTint">@color/colorAccent</item><!-- Adjust track color for better visibility -->
+        <item name="android:thumbTextPadding">8dp</item> <!-- Padding inside thumb -->
+        <item name="android:paddingLeft">8dp</item> <!-- Padding on the left -->
+        <item name="android:paddingRight">8dp</item> <!-- Padding on the right -->
+        <item name="android:paddingTop">4dp</item> <!-- Padding on the top -->
+        <item name="android:paddingBottom">4dp</item> <!-- Padding on the bottom -->
+    </style>
+
+    <!-- EditText Style for Dark Mode -->
+    <style name="EditTextStyleDark">
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/edittext_background_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item> <!-- Better hint contrast -->
+        <item name="android:drawablePadding">8dp</item> <!-- For icons inside EditText -->
+    </style>
+
+    <!-- TextAppearance for Body Text -->
+    <style name="TextAppearance.App.Body" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2dp</item> <!-- Adds spacing between lines -->
+    </style>
+
+    <!-- TextAppearance for Headings -->
+    <style name="TextAppearance.App.Heading" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item> <!-- Slightly increased spacing for emphasis -->
+    </style>
+
+    <!-- SearchView Style -->
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="queryHint">@string/search_your_food</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item> <!-- Text color within the search bar -->
+        <item name="android:iconifiedByDefault">false</item> <!-- Show search icon -->
+    </style>
+
+    <!-- Bottom Sheet Theme -->
+    <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item> <!-- Transparent background -->
+    </style>
+
+    <!-- Dialog Animation -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+</resources>

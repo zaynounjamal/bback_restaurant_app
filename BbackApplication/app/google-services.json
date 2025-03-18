@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "999110517237",
+    "firebase_url": "https://bbackrestaurant-9ef9f-default-rtdb.firebaseio.com",
+    "project_id": "bbackrestaurant-9ef9f",
+    "storage_bucket": "bbackrestaurant-9ef9f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999110517237:android:ed89666baea6ab71c740bc",
+        "android_client_info": {
+          "package_name": "zaynoun.ul.bbackapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClq9jjGO4ORXv9RD2uUu1UbAaKy6auttE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
